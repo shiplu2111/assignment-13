@@ -1,6 +1,5 @@
-import { NextResponse } from "next/server";
+
+import { redirect } from 'next/navigation'
 export async function GET() {
-    return NextResponse.json({
-        message: "Welcome to About Page!"
-      });
+  return redirect('/about');
 }
